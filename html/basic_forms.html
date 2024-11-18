@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms-Basic</title>
+    <link
+      rel="shortcut icon"
+      href="./image_files/favicon.ico"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      textarea {
+        width: 200px;
+        height: 30px;
+      }
+
+      fieldset {
+        padding: 10px;
+        border: 1px solid blue;
+      }
+
+      legend {
+        border: 1px solid darkorchid;
+        padding: 5px;
+        /* border-radius: 8%; */
+      }
+
+      button.submit {
+        margin-right: 20px;
+      }
+
+      button.cancel {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Maruthi Suzuki Registration opens now...</h1>
+
+    <fieldset>
+      <legend>New Cars 2025: Registration Form</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" />
+
+      <br /><br />
+      <label for="profession">Profession:</label>
+      <input type="text" name="profession" id="profession" />
+
+      <br /><br />
+
+      <label for="carmodel">Car Model:</label>
+      <select name="Model" id="modelnumber">
+        <option value="1">Select your preferred Car</option>
+        <option value="2">Baleno</option>
+        <option value="3">Dzire</option>
+        <option value="">XL6</option>
+        <option value="">Ertiga</option>
+      </select>
+
+      <br /><br />
+
+      <label for="buyingPeriod">Buying Period:</label>
+      <select name="buyPeriod" id="buyPeriod">
+        <option value="1">Select your preferred buying period</option>
+        <option value="2">1 week</option>
+        <option value="3">1 week to 2 week</option>
+        <option value="4">1 Month</option>
+        <option value="5">Within 3 Months</option>
+        <option value="6" disabled>More than 6 Months</option>
+      </select>
+
+      <br /><br />
+
+      <label for="feedback">Feedback:</label> <br />
+      <br />
+      <textarea
+        name="feedback"
+        id="feedback"
+        placeholder="Please provide your feedback..."
+      ></textarea>
+
+      <br /><br />
+      <label for="cell">Phone Number: </label>
+      <input
+        type="tel"
+        name="Phone"
+        id="phone"
+        placeholder="+91-xxx-xxx-xxxx"
+      />
+
+      <br /><br />
+
+      <label for="email">Email ID:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="info@email.com"
+      />
+
+      <br /><br />
+
+      <!-- video tag with poster and thumbnail -->
+      <video
+        src="./video_files/video.mp4"
+        poster="./image_files/lenovo-logo.png"
+        controls
+      ></video>
+
+      <br /><br />
+
+      <button type="submit" class="submit">Submit</button>
+
+      <button type="cancel" class="cancel">Cancel</button>
+    </fieldset>
+  </body>
+</html>
