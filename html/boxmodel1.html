@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX Model</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            border: 1px solid dodgerblue;
+        }
+        
+        .box{
+            border: 1px solid dodgerblue;
+            height: 5vh;
+            width: 50vw;
+            background-color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            margin:10px 0px 10px 10px;
+        }
+        
+        .inner1{
+            color: springgreen;
+        }
+        .inner2{
+            color: red;
+        }
+        .inner3{
+            color: blueviolet;
+        }
+        .inner4{
+            color: yellow;
+        }
+
+        .hoverable:hover{
+            background-color: hotpink;
+            color: black;
+            /* transform: rotate3d(1, 2, 3, 10deg); */
+            /* visibility: hidden; */
+            height: 7vh;
+            width: 20vw;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="inner1 box hoverable">Inner 1️⃣ 🟢</div>
+        <div class="inner2 box hoverable">Inner 2️⃣ 🟢</div>
+        <div class="inner3 box hoverable">Inner 3️⃣ 🟢</div>
+        <div class="inner4 box hoverable">Inner 4️⃣ 🟢</div>
+    </div>
+
+
+</body>
+</html>
