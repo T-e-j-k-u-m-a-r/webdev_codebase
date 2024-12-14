@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    height: 60px;
+    width: 100px;
+}
+
+.logo img {
+    position: absolute;
+    bottom: 10px;
+    animation: moveTruck 5s linear infinite;
+}
+
+@keyframes moveTruck {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.title {
+    animation: waveEffect 2s infinite;
+    margin-top: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes waveEffect {
+    0%, 100% {
+        transform: scale(1);
+        color: black;
+    }
+    50% {
+        transform: scale(1.2);
+        color: red;
+    }
+}
