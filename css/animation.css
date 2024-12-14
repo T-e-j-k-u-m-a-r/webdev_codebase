@@ -5,6 +5,7 @@
 
 h1{
     text-align: center;
+    margin-right: 100px;
 }
 
 img{
@@ -14,32 +15,107 @@ img{
 
 .logo img {
     position: absolute;
-    bottom: 10px;
+    bottom: 10px; /* Reverted from 50px to 10px */
     animation: moveTruck 5s linear infinite;
 }
 
 @keyframes moveTruck {
     0% {
-        right: 0;
+        right: -100px; /* Start from outside the viewport */
     }
     100% {
-        right: 100%;
+        right: 100vw; /* Move across the entire viewport width */
     }
 }
 
 .title {
     animation: waveEffect 2s infinite;
-    margin-top: 10px;
+    margin-top: 5px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @keyframes waveEffect {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(.9);
         color: black;
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.1);
         color: red;
     }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.heading, .logo, .description {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    flex: 1 1 45%; /* Reverted width to original value */
+    box-sizing: border-box;
+}
+
+.section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e0d5d5; /* Reverted background color */
+    font-family: inherit; /* Reverted font-family */
+}
+
+.call-us {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.call-us img {
+    height: 30px;
+    width: 50px;
+    margin-left: 10px;
+    animation: moveTruck 5s linear infinite;
+}
+
+h2, p{
+    margin-top:10px;
+    padding: 10px;
+    font-size: medium;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
 }
