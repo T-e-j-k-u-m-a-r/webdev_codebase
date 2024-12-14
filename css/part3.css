@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: dodgerblue;
+    color: white;
+    position: relative;
+}
+
+.learn{
+    position: sticky;
+    border: 10px solid tomato;
+    top: 50px;
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    border: 2px solid green;
+    position: relative;
+    color: black;
+}
+
+.innerBox1{
+    background-color: dodgerblue;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top: 20px;
+    left: 50px; 
+     z-index: 1;
+}
+
+.innerBox2{
+    background-color: yellow;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top: 50px;
+    left: 90px;
+    z-index: 3;
+}
+
+
+.innerBox3{
+    background-color: red;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top: 70px;
+    left: 120px;
+    z-index: 2;
+}
+
